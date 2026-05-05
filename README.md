@@ -12,7 +12,18 @@ Training Set: 80%
 
 Validation Set: 20%
 
-Input Size: 224 x 224 (ImageNet 표준 규격)  
+Input Size: 224 x 224 (ImageNet 표준 규격) 
+
+### 하이퍼파라미터 설정
+Batch Size : 32
+
+Learning Rate : 0.001
+
+Epochs : 5
+
+Optimizer : Adam
+
+Loss Functio : CrossEntropyLoss
 
 ###  분류에 사용할 모델
 
