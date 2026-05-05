@@ -75,8 +75,8 @@ Loss Function : CrossEntropyLoss
 
 ### 사전 요구 사항
 *   **Python 버전**: 3.9 이상 권장
-*   **필수 라이브러리**: `torch`, `torchvision`, `streamlit`, `matplotlib`, `pillow`
-*   **데이터 경로**: 프로젝트 루트 폴더에 `PokemonData` 폴더가 위치해야 합니다.
+*   **필수 라이브러리**: `torch`, `torchvision`, `streamlit`, `matplotlib`, `pillow`, `kagglehub`
+
 
 ###  실행
 1.  **모델 학습**
