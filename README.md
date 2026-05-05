@@ -42,14 +42,23 @@ Loss Function : CrossEntropyLoss
 
 | Model Backbone | Final Val Acc | Training Time | Analysis |
 | :--- | :---: | :---: | :--- |
-| **AlexNet** | 1.03% | ~2m 20s |BN(Batch Normalization) 부재 및 거친 필터 크기로 인해 복잡한 포켓몬 이미지의 특징을 전혀 학습하지 못함. |
-| **GoogLeNet** | 85.56% | ~3m 03s | Inception 모듈의 효율성 덕분에 상대적으로 적은 파라미터로도 매우 우수한 정확도를 기록함. |
-| **ResNet-18** | 83.80% | ~2m 48s | Residual Connection을 통해 안정적인 학습과 빠른 수렴 속도를 보여줌.|
-| **ResNet-34** | 83.28% | ~3m 15s | 18 레이어보다 깊은 구조를 가졌으나, 본 데이터셋 규모에서는 성능 향상이 크지 않음|
-| **EfficientNet-B0** | **90.84%** | ~3m 12s |Compound Scaling 기법을 통해 가장 정교하고 높은 신뢰도의 분류를 수행함.|
+| **AlexNet** | 0.73% | ~2m 20s |BN(Batch Normalization) 부재 및 거친 필터 크기로 인해 복잡한 포켓몬 이미지의 특징을 전혀 학습하지 못함. |
+| **GoogLeNet** | 88.2% | ~3m 03s | Inception 모듈의 효율성 덕분에 상대적으로 적은 파라미터로도 매우 우수한 정확도를 기록함. |
+| **ResNet-18** | 78.15% | ~2m 48s | Residual Connection을 통해 안정적인 학습과 빠른 수렴 속도를 보여줌.하지만 Epoch가 5가되었을 때 train Acc대비 val Acc가 크게 떨어져 오버피팅의 특징이 일어남|
+| **ResNet-34** | 79.25% | ~3m 15s | 18 레이어보다 깊은 구조를 가졌으나, 본 데이터셋 규모에서는 성능 향상이 크지 않음|
+| **EfficientNet-B0** | **91.20%** | ~3m 12s |Compound Scaling 기법을 통해 가장 정교하고 높은 신뢰도의 분류를 수행함.|
+
+
+<img width="557" height="631" alt="image" src="https://github.com/user-attachments/assets/983d1b7f-b022-4ea8-acf1-92c44e4dccfe" />
+
+
+<img width="560" height="412" alt="image" src="https://github.com/user-attachments/assets/8a947262-b42c-4bbc-808c-eefe69bc7b68" />
+
+
 
 ### 학습성능 시각화
-<img width="1189" height="490" alt="image" src="https://github.com/user-attachments/assets/6b88373a-905b-4947-9d3d-38b0cf65e2c0" />
+<img width="1489" height="490" alt="image" src="https://github.com/user-attachments/assets/23330dd9-aef6-43ab-a835-89e13aac40dd" />
+
 
 
 ---
@@ -70,6 +79,20 @@ Loss Function : CrossEntropyLoss
 3.  **예측 결과 시각화**: 
     *   **Top-5 예측**: 모델이 가장 가능성 높게 판단한 상위 5개 포켓몬 이름 출력
     *   **확률표시**: 각 예측 결과의 확률(%)을 시각화
+
+
+
+
+
+https://github.com/user-attachments/assets/6c417548-9c3c-4d29-afd1-bd1ee5f51049
+
+
+
+
+
+
+
+
 
 ##  실행 방법
 
