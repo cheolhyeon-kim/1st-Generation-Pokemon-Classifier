@@ -23,7 +23,7 @@ Epochs : 5
 
 Optimizer : Adam
 
-Loss Functio : CrossEntropyLoss
+Loss Function : CrossEntropyLoss
 
 ###  분류에 사용할 모델
 
