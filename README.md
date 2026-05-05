@@ -6,7 +6,7 @@
 **Data: PokemonData**
 **클래스 수: 150**
 
-Data Split:
+### Data Split
 
 Training Set: 80% 
 
@@ -59,5 +59,19 @@ Input Size: 224 x 224 (ImageNet 표준 규격)
 3.  **예측 결과 시각화**: 
     *   **Top-5 예측**: 모델이 가장 가능성 높게 판단한 상위 5개 포켓몬 이름 출력
     *   **확률표시**: 각 예측 결과의 확률(%)을 시각화
-  
-    *   
+
+##  실행 방법
+
+### 사전 요구 사항
+*   **Python 버전**: 3.9 이상 권장
+*   **필수 라이브러리**: `torch`, `torchvision`, `streamlit`, `matplotlib`, `pillow`
+*   **데이터 경로**: 프로젝트 루트 폴더에 `PokemonData` 폴더가 위치해야 합니다.
+
+###  실행
+1.  **모델 학습**
+    *   `data.ipynb` 파일을 실행합니다.
+    *   실행이 완료되면 폴더 내에 5개의 모델 가중치 파일(`pokemon_*.pth`)이 생성됩니다.
+2.  **GUI 실행**:
+    *   터미널(CMD)에서 아래 명령어를 입력합니다.
+    ```bash
+    streamlit run gui.py
